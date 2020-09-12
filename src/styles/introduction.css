@@ -1,0 +1,39 @@
+.Introduction {
+  font-size: 2.5rem;
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-family: "Bebas Neue", cursive;
+
+  /* border:1px solid black; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  position: relative;
+}
+
+.myReact {
+  color: black;
+  background: rgb(216, 99, 99);
+  padding-left: 0.3em;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.projects {
+  background: black;
+  border-bottom: solid 0.3em white;
+  font-family: "Major Mono Display", monospace;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.personal {
+  position: absolute;
+  /* display: inline-block; */
+  color: black;
+  z-index: -2;
+}
