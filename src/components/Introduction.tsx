@@ -23,7 +23,11 @@ const Introduction: React.FC = () => {
 
         <h1 className="projects">Projects</h1>
       </motion.div>
-      <img src={logo} className="App-logo" alt="logo" />
+      <motion.img
+        initial={{ scale: 1, opacity: 0 }}
+        transition={{duration: 5}}
+        animate={{ scale: 4.7 , opacity: 1}}
+        src={logo} className="App-logo" alt="logo" />
       <h2 className='personal'>Johnny Front-end developer</h2>
       <div className='split-left'></div>
       <div className='split-right'></div>

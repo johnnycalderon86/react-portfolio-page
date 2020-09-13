@@ -4,22 +4,25 @@
 }
 
 body {
-  background-color: #fdfdfd; /* Used if the image is unavailable */
  
+  background: url("../images/black_and_1534817744-1024x475.jpeg");
   height: 100vh;
- 
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
 }
 
- h1 {
+h1 {
   padding: 0.3em 0em 0.3em;
 
   text-align: center;
-} 
- 
-@media (max-width: 600px) {
-  h1{
-    padding:0;
-    margin:0;
-  }
 }
 
+@media (max-width: 600px) {
+  h1 {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    background-color: rgb(216, 9, 216); /* Used if the image is unavailable */
+  }
+}
