@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import logo from '../logo.svg'
 const Introduction: React.FC = () => {
 
 
@@ -22,8 +23,8 @@ const Introduction: React.FC = () => {
 
         <h1 className="projects">Projects</h1>
       </motion.div>
+      <img src={logo} className="App-logo" alt="logo" />
       <h2 className='personal'>Johnny Front-end developer</h2>
-      <hr />
       <div className='split-left'></div>
       <div className='split-right'></div>
     </div>

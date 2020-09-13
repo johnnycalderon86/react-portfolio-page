@@ -12,6 +12,11 @@
   align-items: center;
   position: relative;
 }
+.App-logo {
+  height: 50vmin;
+  pointer-events: none;
+}
+
 
 .myReact {
   color: rgb(253, 250, 250);
@@ -41,22 +46,20 @@
 
 /* MediaQueries */
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   * {
     margin: 0;
   }
   .Introduction {
-   
     flex-direction: column;
-   
   }
-
+  
   .personal {
     visibility: hidden;
   }
-
-
-  .myReactDiv, .projectsDiv {
+  
+  .myReactDiv,
+  .projectsDiv {
     width: 100vw;
     height: 50vh;
   }
@@ -70,11 +73,35 @@
     font-size: 0.6em;
     height: 50vh;
   }
-
-  .myReact{
-    display:flex;
-    justify-content:center;
+  
+  .myReact {
+    display: flex;
+    justify-content: center;
     align-items: flex-end;
+  }
+  .App-logo {
+    position: absolute;
+    display: inline-block;
+    top:60%;
+    height: 30vmin;
     
+    pointer-events: none;
+  }
+  .App-link {
+    color: #c5cbcc;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
   }
 }
