@@ -14,8 +14,8 @@
 }
 
 .myReact {
-  color: black;
-  background: rgb(216, 99, 99);
+  color: rgb(253, 250, 250);
+  background: rgb(235, 81, 81);
   padding-left: 0.3em;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -23,17 +23,58 @@
 }
 
 .projects {
-  background: black;
+  background: rgb(70, 69, 69);
   border-bottom: solid 0.3em white;
   font-family: "Major Mono Display", monospace;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
-
 .personal {
+  /* padding:0.2em; */
   position: absolute;
   /* display: inline-block; */
   color: black;
+  background: white;
   z-index: -2;
+}
+
+/* MediaQueries */
+
+@media (max-width: 550px) {
+  * {
+    margin: 0;
+  }
+  .Introduction {
+   
+    flex-direction: column;
+   
+  }
+
+  .personal {
+    visibility: hidden;
+  }
+
+
+  .myReactDiv, .projectsDiv {
+    width: 100vw;
+    height: 50vh;
+  }
+  .myReact {
+    min-width: 100vw;
+    font-size: 1.3em;
+    height: 50vh;
+  }
+  .projects {
+    width: 100vw;
+    font-size: 0.6em;
+    height: 50vh;
+  }
+
+  .myReact{
+    display:flex;
+    justify-content:center;
+    align-items: flex-end;
+    
+  }
 }

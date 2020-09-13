@@ -4,7 +4,7 @@ import Introduction from './components/Introduction';
 //sandbox
 
 
-function App() {
+const  App=()=> {
 
 
 

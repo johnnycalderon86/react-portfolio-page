@@ -1,18 +1,25 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #fdfdfd; /* Used if the image is unavailable */
-  background-repeat: no-repeat;
-
-  background-size: cover;
+ 
+  height: 100vh;
+ 
 }
 
-h1 {
+ h1 {
   padding: 0.3em 0em 0.3em;
- /* border:1px solid rgb(146, 23, 23); */
-  /* width: 100%; */
+
   text-align: center;
+} 
+ 
+@media (max-width: 550px) {
+  h1{
+    padding:0;
+    margin:0;
+  }
 }
 
