@@ -1,5 +1,5 @@
 .Introduction {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: white;
   font-family: "Anton", sans-serif;
   font-family: "Bebas Neue", cursive;
@@ -9,13 +9,12 @@
   height: 100vh;
   align-items: center;
   position: relative;
-  padding: 2em;
 }
 .App-logo {
   position: absolute;
-  top: 29.7vh;
-  right: 45vw;
-  height: 11.5vmin;
+  top: 21.7vh;
+  right: 46vw;
+  height: 15.5vmin;
   pointer-events: none;
 }
 
@@ -48,6 +47,7 @@
   }
   .Introduction {
     flex-direction: column;
+    font-size: 2.3rem;
   }
 
   .personal {
@@ -83,15 +83,15 @@
   .App-logo {
     position: absolute;
 
-    top: 60%;
-    right: 21%;
-    height: 40vmin;
+    top: 15%;
+    right: 27%;
 
+    height: 30vmin;
     pointer-events: none;
   }
-  .App-link {
-    color: #c5cbcc;
-  }
+ .linkProjects:link{
+   text-decoration: none;
+ }
 }
 @keyframes App-logo-spin {
   from {
