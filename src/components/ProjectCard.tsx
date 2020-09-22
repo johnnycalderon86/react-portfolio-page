@@ -38,6 +38,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
             animate="visible"
         >
             <h1 className="project-title">{project.title}</h1>
+            <h1 className="project-link">{project.link}</h1>
 
 
         </motion.div>

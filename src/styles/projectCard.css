@@ -6,6 +6,7 @@
     font-family: 'Permanent Marker', cursive;
     border: 5px solid rgb(238, 235, 235);
    color: white;
+   margin:0.1em;
 }
 
 .star-wars{
@@ -21,14 +22,29 @@
     background-repeat: no-repeat, repeat;
     background-size: cover;
 }
+.type-game{
+    background: url('../images/writing.jpg');
+
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+}
 
 .project-title{
     font-size:4.5rem;
-    border:1px solid rgb(248, 247, 247);
+    /* border:1px solid rgb(248, 247, 247); */
+}
+.project-link{
+    font-size:2.5rem;
+    color:yellow;
+
 }
 @media(max-width:600px){
     .project-title{
         font-size:1.5rem;
         border:1px solid rgb(248, 247, 247);
+    }
+    .project-link{
+        font-size:1rem;
+        
     }
 }
