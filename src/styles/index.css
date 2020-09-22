@@ -4,8 +4,9 @@
 }
 
 body {
- 
-  background: url("../images/black_and_1534817744-1024x475.jpeg");
+display :flex;
+ background: url("../images/3cec913f22914537ceb0638ef7b39574.jpg");
+
   height: 100vh;
   background-repeat: no-repeat, repeat;
   background-size: cover;

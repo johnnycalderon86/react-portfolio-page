@@ -1,0 +1,32 @@
+*{
+    margin: 0
+}
+.projectsContainer {
+
+    background: rgb(246, 245, 245);
+    opacity: 0.6;
+
+ width:100vw; height:100vh;
+margin: 0 auto;
+
+}
+.projectContent{
+    padding:1em;
+    background:rgb(24, 23, 23);
+   height:100vh;
+   
+}
+.projectTiTle{
+    font-size: 4.5rem;
+   
+    color: rgb(253, 249, 249);
+    font-family: 'Major Mono Display', monospace;
+    opacity: 1;
+}
+
+@media (max-width: 800px) {
+    
+      
+
+
+}
