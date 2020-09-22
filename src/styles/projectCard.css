@@ -1,0 +1,34 @@
+.ProjectCard{
+    background-color:rgb(8, 6, 6);;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows:25vh;
+    font-family: 'Permanent Marker', cursive;
+    border: 5px solid rgb(238, 235, 235);
+   color: white;
+}
+
+.star-wars{
+    background: url('../images/star-wars-a-new-hope-i14010.jpg');
+
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+}
+
+.formula-one{
+    background: url('../images/nigel-mansell-williams-fw14-valentin-domovic.jpg');
+
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+}
+
+.project-title{
+    font-size:4.5rem;
+    border:1px solid rgb(248, 247, 247);
+}
+@media(max-width:600px){
+    .project-title{
+        font-size:1.5rem;
+        border:1px solid rgb(248, 247, 247);
+    }
+}

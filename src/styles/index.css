@@ -18,12 +18,3 @@ h1 {
   text-align: center;
 }
 
-@media (max-width: 600px) {
-  h1 {
-    padding: 0;
-    margin: 0;
-  }
-  body {
-    background-color: rgb(216, 9, 216); /* Used if the image is unavailable */
-  }
-}

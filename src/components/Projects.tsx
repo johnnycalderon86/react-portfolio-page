@@ -26,7 +26,9 @@ const containerVariants = {
 export interface IProject {
     title:string;
     id:number;
-    link:string
+    link:string;
+    classname:string;
+    
 }
 
 
@@ -39,12 +41,12 @@ const Projects = () => {
             exit="exit"
         >
             <div className="projectContent">
-            <h1 className="projectTiTle">Projects</h1>
-                <div>
+            <h1 className="projectsTiTle">Projects</h1>
+             
                     {projectData.map((project: IProject) =>{
-                       return  <ProjectCard project={project}/>
+                       return  <ProjectCard key={project.id} project={project}/>
                     })}
-                </div>
+                
             </div>
         </motion.div>
     )
