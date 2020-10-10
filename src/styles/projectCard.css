@@ -51,7 +51,7 @@
 @media (max-width: 700px) {
   .ProjectCard {
     grid-template-columns: auto;
-    grid-template-rows: 20vh;
+    grid-template-rows: 15vh;
   }
   .project-title {
     font-size: 3rem;
@@ -59,7 +59,7 @@
     color: rgb(216, 11, 235);
   }
   .project-link {
-    font-size: 3.6rem;
+    font-size: 2.6rem;
     align-self: center;
     color: rgb(239, 239, 240);
   }
