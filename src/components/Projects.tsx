@@ -9,7 +9,7 @@ const containerVariants = {
         y: '100vh',
     },
     visible: {
-        opacity: 0.7,
+        opacity: 0.85,
         y: 0,
         transition: {
             type: 'tween', delay: 0.2, duration: 1

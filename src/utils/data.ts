@@ -14,7 +14,7 @@ export const projectData =[
         classname:"formula-one"
     },
     {   
-        title: "Type Game",
+        title: "Reading List",
         id: 3,
         link: "https://github.com/",
         classname:"type-game"

@@ -75,11 +75,10 @@ margin:0;
     font-size: 0.6em;
     height: 50vh;
     border: none;
-    background: url("../images/black_and_1534817744-1024x475.jpeg");
-    background-repeat: no-repeat, repeat;
-    background-size: cover;
+    /* background: url("../images/black_and_1534817744-1024x475.jpeg"); */
+   
     background:rgb(56, 56, 56);
-    color: white;
+    
   }
 
   .myReact {

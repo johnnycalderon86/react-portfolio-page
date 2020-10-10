@@ -1,50 +1,76 @@
-.ProjectCard{
-    background-color:rgb(8, 6, 6);;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows:25vh;
-    font-family: 'Permanent Marker', cursive;
-    border: 5px solid rgb(238, 235, 235);
-   color: white;
-   margin:0.1em;
+.ProjectCard {
+  background-color: rgb(41, 40, 40);
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 25vh;
+  font-family: "Permanent Marker", cursive;
+  border: 10px solid rgb(238, 235, 235);
+  color: rgb(250, 248, 248);
+  margin-bottom: 0.5em;
+  justify-items: center;
+  align-items: center;
 }
 
-.star-wars{
-    background: url('../images/star-wars-a-new-hope-i14010.jpg');
+.star-wars {
+  background: url("../images/star-wars-a-new-hope-i14010.jpg");
 
-    background-repeat: no-repeat, repeat;
-    background-size: cover;
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
 }
 
-.formula-one{
-    background: url('../images/nigel-mansell-williams-fw14-valentin-domovic.jpg');
+.formula-one {
+  background: url("../images/nigel-mansell-williams-fw14-valentin-domovic.jpg");
 
-    background-repeat: no-repeat, repeat;
-    background-size: cover;
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
 }
-.type-game{
-    background: url('../images/writing.jpg');
+.type-game {
+  background: url("../images/1984.jpg");
 
-    background-repeat: no-repeat, repeat;
-    background-size: cover;
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
 }
 
-.project-title{
-    font-size:4.5rem;
-    /* border:1px solid rgb(248, 247, 247); */
+.project-title {
+  font-size: 4.5rem;
 }
-.project-link{
-    font-size:2.5rem;
-    color:yellow;
+.project-title:hover {
+  cursor: pointer;
+}
+.project-link {
+  font-size: 4.5rem;
+  color: rgb(243, 243, 241);
+}
+.project-link:hover {
+ 
+  cursor: pointer;
+ 
+}
 
+
+@media (max-width: 700px) {
+  .ProjectCard {
+    grid-template-columns: auto;
+    grid-template-rows: 20vh;
+  }
+  .project-title {
+    font-size: 3rem;
+    align-self: center;
+    color: rgb(216, 11, 235);
+  }
+  .project-link {
+    font-size: 3.6rem;
+    align-self: center;
+    color: rgb(239, 239, 240);
+  }
 }
-@media(max-width:600px){
-    .project-title{
-        font-size:1.5rem;
-        border:1px solid rgb(248, 247, 247);
-    }
-    .project-link{
-        font-size:1rem;
-        
-    }
+
+@media (max-width: 330px) {
+  .project-title {
+    font-size: 3rem;
+  }
+  .project-link {
+    font-size: 3.5rem;
+    align-self: center;
+  }
 }

@@ -3,6 +3,12 @@ import React from 'react'
 import { IProject } from './Projects'
 import '../styles/projectCard.css'
 import { motion } from 'framer-motion'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+
+library.add(fab)
 //===========================Framer-Motion-Variants
 const cardVariants = {
     hidden: {
@@ -23,11 +29,20 @@ const cardVariants2 = {
         transition: { delay: 1.2, type: 'spring' }
     }
 }
+const linkVariants = {
+    hover: {
+        scale: 1.3,
+        textShadow: "0px 0px 8px rgb(255,255,255)",
+       
+       
+    }
+}
 //=============================
 type Props = {
     project: IProject
 }
 
+const github = <FontAwesomeIcon icon={['fab', 'github']} />
 
 const ProjectCard: React.FC<Props> = ({ project }) => {
     const switch1 = project.classname === "formula-one" ? cardVariants : cardVariants2;
@@ -37,8 +52,15 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
             initial="hidden"
             animate="visible"
         >
-            <h1 className="project-title">{project.title}</h1>
-            <h1 className="project-link">{project.link}</h1>
+            <motion.h1 className="project-title"
+                variants={linkVariants}
+                whileHover="hover"
+            >{project.title}</motion.h1>
+            <motion.a href={project.link} className="project-link"
+                variants={linkVariants}
+                whileHover="hover"
+            >{github}</motion.a>
+
 
 
         </motion.div>
