@@ -1,22 +1,9 @@
 import React from "react";
 import { motion } from 'framer-motion'
-import logo from '../logo.svg'
+
 import { Link } from 'react-router-dom'
 
-const imgVariant = {
-  hidden: {
-    opacity: 0,
 
-  },
-  visible: {
-    scale: 1.9,
-    opacity: 0.1,
-    transition: {
-
-      duration: 6,
-    },
-  }
-}
 const buttonVariants = {
 
   hover: {
@@ -77,12 +64,6 @@ const Introduction: React.FC = () => {
       </Link>
 
 
-      <motion.img src={logo} className="App-logo" alt="logo"
-        variants={imgVariant}
-        initial="hidden"
-        animate="visible"
-
-      />
 
     </motion.div>
   )
