@@ -52,11 +52,11 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
             initial="hidden"
             animate="visible"
         >
-            <motion.h1 className="project-title"
+            <motion.a href={project.link} className="project-title"
                 variants={linkVariants}
                 whileHover="hover"
-            >{project.title}</motion.h1>
-            <motion.a href={project.link} className="project-link"
+            >{project.title}</motion.a>
+            <motion.a href={project.github} className="project-link"
                 variants={linkVariants}
                 whileHover="hover"
             >{github}</motion.a>

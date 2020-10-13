@@ -28,7 +28,7 @@ export interface IProject {
     id:number;
     link:string;
     classname:string;
-    
+    github:string
 }
 
 
